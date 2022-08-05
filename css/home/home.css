@@ -40,6 +40,7 @@
 
 
  .conteudo p{
+    line-height: 1.4;
     font-family: 'Roboto Slab', serif;
     overflow: hidden; 
     text-overflow: ellipsis;
@@ -97,6 +98,9 @@
   .decricao-ficha{
     grid-column: 1/-1;
     padding: 40px;
+  }
+  .decricao-ficha ul li{
+    line-height: 1.7;
   }
   .decricao-ficha::before{
     top: 20px;
