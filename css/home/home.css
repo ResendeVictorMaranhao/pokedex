@@ -127,7 +127,10 @@
       height: 100%;
     }
     .descricao-conteudo h1{
-      color: white;
+      color: var(--cor-14);
+    }
+    .descricao-conteudo p{
+      color: var(--cor-9);
     }
     .descricao-ficha-bg{
       width: 100%;
