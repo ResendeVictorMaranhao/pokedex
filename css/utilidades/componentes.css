@@ -14,8 +14,33 @@
   border-radius: 4px;
   font-size: 1.25rem;
 }
-@media (max-width: 500px){
+@media (max-width: 550px){
+  .btn{
+    width: 135px;
+  }
+}
+@media (max-width: 506px){
+  .btn{
+    width: 125px;
+  }
+}
+@media (max-width: 476px){
+  .btn{
+    width: 110px;
+  }
+}
+@media (max-width: 436px){
   .btn{
     width: 100px;
+  }
+}
+@media (max-width: 400px){
+  .btn{
+    width: 90px;
+  }
+}
+@media (max-width:367px){
+  .btn{
+    width: 70px;
   }
 }
