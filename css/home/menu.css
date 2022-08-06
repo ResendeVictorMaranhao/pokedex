@@ -20,9 +20,11 @@
 [value="primeira"]:checked ~ .primeira, [value="segunda"]:checked ~ .segunda, [value="terceira"]:checked ~ .terceira{
 display: grid;
 }
-[value="primeira1"]:checked ~ .primeira, [value="segunda1"]:checked ~ .segunda, [value="terceira1"]:checked ~ .terceira{
-  display: grid;
-  }
+@media (max-width:700px){
+  [value="primeira"]:checked ~ .primeira, [value="segunda"]:checked ~ .segunda, [value="terceira"]:checked ~ .terceira{
+    display: flex;
+    }
+}
 
 [value="fogo"]:checked ~ #tipoFogo{
   display: block;

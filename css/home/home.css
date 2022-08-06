@@ -89,74 +89,49 @@
    top: 20px;
   }
 }
+@media (max-width:951px){
+  .descricao-ficha-bg, .pokemon{
+    
+    grid-template-columns: 1fr 5.25fr 5.25fr 0.5fr;
+    gap:40px;
+  }
+}
 @media (max-width:770px){
   .descricao-ficha-bg, .pokemon{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   gap: 32px;
+    
+    grid-template-columns: 0.3fr 5.25fr 5.25fr 0.3fr;
+    gap:40px;
   }
-  .pokemon-imagem{
-    grid-column: 1;
-    margin-left: 40px;
-   
+  @media (max-width:700px){
+    .pokemon{
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    
+    }
+    .descricao-conteudo{
+      padding: 0px 40px;
+      background-color: #04142C ;
+      box-shadow: 0 9px 0px 0px #04142C;
+      padding-top: 170px;
+     
+    }
+    .pokemon-imagem{
+      margin-bottom: -120px;
+      margin-left: 40px;
+      margin-right: 40px;
+      
+    }
+    .pokemon-imagem{
+      object-fit: contain;
+      height: 100%;
+    }
+    .descricao-conteudo h1{
+      color: white;
+    }
+    .descricao-ficha-bg{
+      width: 100%;
+    
+    }
   }
-  .decricao-ficha{
-    grid-column: 1/-1;
-    padding: 40px;
-  }
-  .decricao-ficha ul li{
-    line-height: 1.7;
-  }
-  .decricao-ficha::before{
-    top: 20px;
-    right: 40px;
-   }
-   .conteudo{
-    margin-right: 40px;
-   }
-
-}
-@media (max-width:650px){
-  .pokemon{
-    display: flex;
-    gap: 0;
-    flex-direction: column;
-    align-items: flex-start;
-
-  }
-
-  .decricao-ficha::before{
-   display: none;
-  }
-  .descricao-ficha-bg{
-    padding: 0;
-    width: 100%;
-   
-  }
-  .descricao-conteudo{
-    padding: 40px;
-    padding-top: 160px;
-    background-color: #04142C;      
-    box-shadow: 0 10px 0px 0px #04142C;
-  }
- 
-  .pokemon h1{
-    color: var(--cor-14);
-  }
-  .pokemon-imagem{
-    margin-right: 40px;  
-    margin-bottom: -120px;
-    position: relative;
-  }
-  .pokemon-imagem img{
-    height: 100%;
-    object-fit: cover;
-  }
-  .decricao-ficha{
-    padding: 0px 40px 40px 40px;
-  }
-  .conteudo p{
-    color: var(--cor-6);
-  }
-  
 }
