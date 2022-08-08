@@ -5,6 +5,7 @@
   margin: 5px;
   cursor: pointer;
 }
+
 [type="radio"]{
   position: absolute;
   opacity: 0;
